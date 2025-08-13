@@ -15,3 +15,15 @@ jobs:
           cd build
           echo "Hello world" > hello.txt
           ls
+          
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: ./build
+
+
+
+
+          
+          
